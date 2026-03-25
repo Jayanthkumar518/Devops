@@ -10,7 +10,7 @@ jobs:
 
   steps:
    - name: Checkout repository
-     uses: actions/Checkout@v3
+     uses: actions/checkout@v3
 
    - name: run a simple command
      run: echo "Hallaleuh"  
