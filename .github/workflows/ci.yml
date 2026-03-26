@@ -20,3 +20,6 @@ jobs:
 
       - name: step2
         run: echo "step 2 is running finely"
+
+      - name: Pipeline Break
+        run: exit 1
