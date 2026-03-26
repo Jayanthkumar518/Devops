@@ -15,3 +15,8 @@ jobs:
       - name: run a simple command
         run: echo "Hallaleuh"  
 
+      - name: step1
+        run: echo "step 1 is running finely" 
+
+      - name: step2
+        run: echo "step 2 is running finely"
