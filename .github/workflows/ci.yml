@@ -2,7 +2,9 @@ name: Simple CI Pipeline
 
 on:
   push:
-    branches: ["main"]
+   branches: ["main"]
+  pull_request:
+   branches: ["main"]  
 
 jobs:
   build:
@@ -21,10 +23,3 @@ jobs:
       - name: step2
         run: echo "step 2 is running finely"
 
-      - name: Pipeline Break
-        run: exit 1
-       on:
-         push:
-          branches: ["main"]
-         pull_request:
-          branches: ["main"]
