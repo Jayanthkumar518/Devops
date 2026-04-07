@@ -23,3 +23,8 @@ jobs:
 
       - name: Pipeline Break
         run: exit 1
+       on:
+         push:
+          branches: ["main"]
+         pull_request:
+          branches: ["main"]
